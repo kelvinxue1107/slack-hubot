@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  slack-hubot:
+    image: slack-hubot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
