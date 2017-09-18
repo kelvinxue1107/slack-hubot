@@ -24,4 +24,3 @@ RUN sed -i "s/hubot-redis-brain/hubot-script-shellcmd/g" external-scripts.json
 RUN sed -i '/heroku/d' external-scripts.json
 EXPOSE 8080
 RUN HUBOT_SLACK_TOKEN=xoxb-226655992433-9S2rohyuPqFgf6VfVhQRDHAa ./bin/hubot --adapter slack
-
