@@ -14,4 +14,4 @@ RUN npm install hubot-script-shellcmd
 RUN rm -f hubot-scripts.json && cp -R node_modules/hubot-script-shellcmd/bash ./
 RUN sed -i "s/hubot-redis-brain/hubot-script-shellcmd/g" external-scripts.json && sed -i '/heroku/d' external-scripts.json
 EXPOSE 8080
-RUN HUBOT_SLACK_TOKEN=xoxb-226655992433-OPkDrD5WVNolgzDRTl59Vyez ./bin/hubot --adapter slack
+RUN HUBOT_SLACK_TOKEN=xoxb- ./bin/hubot --adapter slack
