@@ -1,1 +1,1 @@
-The docker image need built by Dockerbuild command, then upload to related REPO, could use docker run --name YOURNAME -d DOCKERHUBRREPO /bin/bash -c "HUBOT_SLACK_TOKEN=xoxb-244466711778-NOywfTYUYodldn8ycH1v0xbD ./bin/hubot --adapter slack"
+The docker image need built by Dockerbuild command, then upload to related REPO, could use docker run --name YOURNAME -d DOCKERHUBRREPO /bin/bash -c "HUBOT_SLACK_TOKEN="VALUE" ./bin/hubot --adapter slack"
