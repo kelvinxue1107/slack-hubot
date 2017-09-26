@@ -9,7 +9,7 @@ RUN npm uninstall hubot-heroku-keepalive --save
 RUN adduser -p `openssl passwd -1 -salt "12345678" hubot` hubot
 USER hubot
 WORKDIR /home/hubot
-RUN yo hubot --owner="kelvin.xue" --name="glis-hubotpads" --description="glis-hubots" --defaults
+RUN yo hubot --owner="kelvin.xue" --name="YOURNAME" --description="hubots" --defaults
 RUN npm install hubot-script-shellcmd
 RUN rm -f hubot-scripts.json && cp -R node_modules/hubot-script-shellcmd/bash ./
 RUN sed -i "s/hubot-redis-brain/hubot-script-shellcmd/g" external-scripts.json && sed -i '/heroku/d' external-scripts.json
